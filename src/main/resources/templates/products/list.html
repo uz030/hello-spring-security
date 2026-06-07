@@ -16,6 +16,18 @@
         .badge-stock-low { background-color: #f59e0b; }
         .badge-stock-out { background-color: #ef4444; }
         .product-price { font-weight: 700; color: #e94560; }
+        footer {
+            margin: 30px 15px 14px;
+            padding-top: 12px;
+            border-top: 1px solid #dee2e6;
+            text-align: center;
+            color: #6c757d;
+            font-size: 12px;
+        }
+
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -106,6 +118,9 @@
     </div>
 </div>
 
+<footer>
+    <p th:text="${'실습 수행 : ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss') + '  |  학번: 2371195  |  성명: 서유진'}"></p>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
